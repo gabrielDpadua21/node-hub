@@ -1,0 +1,12 @@
+let result = 10;
+console.log(result);
+result += 2;
+console.log(result);
+result -= 5;
+console.log(result);
+result *= 8;
+console.log(result);
+result /= 2;
+console.log(result);
+result %= 6;
+console.log(result);

@@ -1,0 +1,14 @@
+console.log("OPERAÇÕES DE SINAL");
+console.log(Math.abs(-10));
+console.log(Math.ceil(1.1));
+console.log(Math.ceil(-1.1));
+console.log(Math.floor(9.9));
+console.log(Math.floor(-9.9));
+console.log(Math.round(4.5));
+console.log(Math.round(4.4));
+console.log(Math.round(-4.6));
+console.log(Math.round(-4.5));
+console.log(Math.sign(5));
+console.log(Math.sign(-5));
+console.log(Math.trunc(2.3));
+console.log(Math.trunc(-2.3));

@@ -1,0 +1,14 @@
+{
+  "name": "node-cli",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "node index.js",
+    "test": "mocha ./__tests__/test.js"
+  },
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^5.0.0",
+    "mocha": "^7.1.1"
+  }
+}

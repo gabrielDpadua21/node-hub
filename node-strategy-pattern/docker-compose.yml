@@ -1,0 +1,44 @@
+version: '3'
+
+services:
+    # node-heros:
+    #     build: ./.docker
+    #     command: yarn
+    #     command: yarn dev
+    #     ports: 
+    #      - "3001:3001"
+    #     volumes:
+    #      - '.:/src/app'
+    #      - '/usr/node_modules'
+
+    postgres-heros:
+        image: postgres
+        ports:
+         - "5432:5432"
+        environment:
+          POSTGRES_USER: root
+          POSTGRES_PASSWORD: toor
+          POSTGRES_DB: db_heros
+        volumes:
+         - ./.docker/postgres:/data/postgres
+
+    adminer-heros:
+        image: adminer
+        ports:
+         - "8080:8080"
+        links:
+         - postgres-heros
+        depends_on: 
+         - postgres-heros
+
+
+    mongo-heros:
+        image: mongo:4
+        ports: 
+          - "27017:27017"
+        volumes: 
+          - ./.docker/mongodata:/data/db
+        environment: 
+          MONGO_INITDB_ROOT_USERNAME: root
+          MONGO_INITDB_ROOT_PASSWORD: toor
+        

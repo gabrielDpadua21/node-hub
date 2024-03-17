@@ -1,0 +1,21 @@
+{
+  "name": "functional-js",
+  "version": "1.0.0",
+  "description": "### Exemplos basicos de estudo de JavaScript Funcionales",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gabrielDPadua@bitbucket.org/gabrielDPadua/funtional-js-basic.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/gabrielDPadua/funtional-js-basic#readme",
+  "dependencies": {
+    "rxjs": "^6.6.6",
+    "xmlhttprequest": "^1.8.0"
+  }
+}
